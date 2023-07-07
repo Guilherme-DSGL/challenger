@@ -1,12 +1,12 @@
 class MyClass {
 
-  myVar = 0;
+  value = 0;
 
   generator(){
     return this._promise().then(
       (value) => {
-        this.myVar = value as number;
-        console.log(this.myVar);
+        this.value = value as number;
+        console.log(this.value);
       }
     )
   }
